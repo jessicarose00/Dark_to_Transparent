@@ -16,29 +16,29 @@ This analysis digs deeper into the suspicious situations where AIS signals are i
 The [Global Fishing Watch's](https://globalfishingwatch.org/) mission is to use satellite technology, cloud computing and machine learning to create a more complete and connected picture of global fishing activity. This project is a compliment to their work on fishing and vessel detection and draws on their [publicly available code and datasets](https://globalfishingwatch.org/datasets-and-code/).  
 
 ## Table of Contents
-1. Requirements
+1. [Requirements](https://github.com/jessicarose00/Capstone/blob/master/requirements.txt)
 2. Data Acquisition
-    1. [GFW dataset]()
-    2. [Webscraping]()
-3. Exploratory Data Analysis
-4. Modeling
+    1. [GFW Raw Gap Events Data](https://github.com/jessicarose00/Capstone/blob/master/01_Data_Acquisition_RawGapEvents.ipynb)
+    2. [Webscraping](https://github.com/jessicarose00/Capstone/blob/master/02_Data_Acquisition_Scraping.ipynb)
+3. [Exploratory Data Analysis](https://github.com/jessicarose00/Capstone/blob/master/03_EDA.ipynb)
+4. [Modeling](https://github.com/jessicarose00/Capstone/blob/master/04_Modeling.ipynb)
 5. Conclusions
 6. Future Work
 
 ## Data Acquisition
 The Global Fishing Watch's gap events dataset contains over 6 million observations of vessels 'going dark' for a period longer than 12 hours between January 1, 2018 and December 31, 2019. The dataset was removed of any gaps events resulting from low satellite coverage or high vessel density. Using the Maritime Mobile Service Identity (MMSI) numbers, I searched official public registries to confirm vessel registration and obtain more information regarding the identity of vessels in this dataset. This involved the development of a webscraping tool that queried the International Maritime Organization's (IMO) database to gather information on the vessel’s name, call sign, IMO number, and flag state. The tool was able to query and classify around 80,000 MMSI numbers as either in the database or not. However, the website capped search results at a daily max of 100 queries, so obtaining additional information on the vessels that were registered proved infeasible.
 
-### [Data Files]()
+### Data Files
 - raw_gaps.csv - original gap events data file from GFW (removed due to size constraints)
 - raw_sample.csv - sample of 500,000 gap events for analysis (500_000, 21)
 - imo_reg.csv - MMSI numbers of vessels in IMO database (9_221, 1)
 - imo_notreg.csv - MMSI numbers of vessels not found in IMO database (79_066, 1)
 - gaps_notreg.csv - gap events from vessels not found in IMO database (346_762, 21)
 
-## [Exploratory Data Analysis]()
+## Exploratory Data Analysis
 
 
-## [Modeling/Unsupervised Learning Techniques]()
+## Modeling/Unsupervised Learning Techniques
 
 
 ## References
