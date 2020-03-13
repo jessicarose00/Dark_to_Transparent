@@ -1,5 +1,17 @@
 # From Dark to Transparent: Illuminating Patterns in Global Fishing Activity
 
+## Contents
+- [Requirements](https://github.com/jessicarose00/Capstone/blob/master/requirements.txt)
+- [Executive Summary](#Executive-Summary)
+- [Problem Statement]
+- [Data Acquisition](#Data-Acquisition)
+    1. [GFW Raw Gap Events Data](https://github.com/jessicarose00/Capstone/blob/master/01_Data_Acquisition_RawGapEvents.ipynb)
+    2. [Webscraping](https://github.com/jessicarose00/Capstone/blob/master/02_Data_Acquisition_Scraping.ipynb)
+- [Exploratory Data Analysis](https://github.com/jessicarose00/Capstone/blob/master/03_EDA.ipynb)
+- [Future Work](#Future-Work)
+- [Conclusions](#Conclusion)
+- [References](#References)
+
 ## Executive Summary
 Illegal, unreported and unregulated fishing poses a great threat to the sustainable management of fisheries and ocean biodiversity. Satellite technology shows great promise in revolutionizing the way we monitor and understand global fishing activity.
 
@@ -15,15 +27,6 @@ This analysis is concerned with the situations where AIS signals are intentional
 
 The [Global Fishing Watch's](https://globalfishingwatch.org/) mission is to use satellite technology, cloud computing and machine learning to create a more complete and connected picture of global fishing activity. This project is a compliment to their work on fishing and vessel detection and draws on their [publicly available code and datasets](https://globalfishingwatch.org/datasets-and-code/). 
 
-## Table of Contents
-- [Requirements](https://github.com/jessicarose00/Capstone/blob/master/requirements.txt)
-- Data Acquisition
-    1. [GFW Raw Gap Events Data](https://github.com/jessicarose00/Capstone/blob/master/01_Data_Acquisition_RawGapEvents.ipynb)
-    2. [Webscraping](https://github.com/jessicarose00/Capstone/blob/master/02_Data_Acquisition_Scraping.ipynb)
-- [Exploratory Data Analysis](https://github.com/jessicarose00/Capstone/blob/master/03_EDA.ipynb)
-- Conclusions
-- Future Work
-
 ## Data Acquisition
 The Global Fishing Watch's gap events dataset contains over 6 million observations of vessels 'going dark' for a period longer than 12 hours between January 1, 2018 and December 31, 2019. The dataset was removed of any gaps events resulting from low satellite coverage or high vessel density.  
 
@@ -35,9 +38,13 @@ Using each vessel's identification number, known as the Maritime Mobile Service 
 - imo_reg.csv - MMSI numbers of vessels in IMO database (9_221, 1)
 - imo_notreg.csv - MMSI numbers of vessels not found in IMO database (79_066, 1)
 - gaps_notreg.csv - gap events from vessels not found in IMO database (346_762, 21)
+- gap_notreg_off_clusters.csv -
 
 ## Exploratory Data Analysis and Modeling/Unsupervised Learning Techniques
 
+## Future Work
+
+## Conclusion
 
 ## References
 Malarky, Lacey and Beth Lowell. "Avoiding Detection: Global Case Studies of Possible AIS Avoidance". Oceana. March 2018.  
