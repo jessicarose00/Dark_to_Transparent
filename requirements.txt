@@ -2,6 +2,8 @@ pandas
 numpy
 matplotlib
 seaborn
+selenium
+time
 scikit-learn
 basemap
 yellowbrick
