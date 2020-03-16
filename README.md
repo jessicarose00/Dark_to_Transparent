@@ -46,7 +46,9 @@ Investigating when vessels go dark throughout the year exposes some seasonality:
 
 Turning to the results of the best performing DBSCAN model, we see that clustering the coordinates and length of a gap event reveal groupings of data points near three different continents: Asia, Europe and North America.
 
-![Global Map](/Users/jessicaertel/Desktop/general_assembly/capstone/Global_Map.png) 
+<p align = "center">
+  <img src="/Users/jessicaertel/Desktop/Global_Map.png" alt="Drawing" style="width: 600px;"/>
+</p>
 
 A description of initial findings on each cluster is included in the conclusion section of the [EDA notebook](https://github.com/jessicarose00/Capstone/blob/master/03_EDA.ipynb). Consistent with the findings of the GFW, the analysis confirms that different gear types have different latitudinal distributions. In Cluster 0 (Asia), trawling is the most widespread activity and combined with set gillnets, comprises 50% of the activity seen in this cluster. This is quite large given the number of observations in this cluster. The average length of a gap event in Cluster 0 is much higher and there is significantly greater spread in the distribution of gap event durations when compared to Clusters 1 and 3. Prior to plotting the data on a map, I evaluated relationships between a vessel's location and the length of their gap event in each cluster. Overall, there didn't appear to be a correlation between these features except in Cluster 0, where we see shorter gap events ocurring off the eastern coast of Japan and longer gap events along the coasts of China, South Korea and Taiwan.
 
