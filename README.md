@@ -54,7 +54,7 @@ Comparisons between the clusters are somewhat insightful, but each cluster's act
 
 ## Future Work
 
-With a wealth of gap event features to evaluate, I chose to focus this analysis primarily on the duration and location of gap events. This meant that other vessel features such as positions per day, gap distance and the vessel's distance from shore were not sufficiently addressed. The GFW's [research](https://globalfishingwatch.org/data-blog/updated-fishing-lists-version-0-2/) indicates that the number of positions a vessel assumes in a given year has implications for their activity. This is certainly an area deserving of greater attention in the analysis.  
+With a wealth of gap event features to evaluate, I chose to focus this analysis primarily on the duration and location of gap events. This meant that other vessel features such as positions per day, gap distance and the vessel's distance from shore were not sufficiently addressed. The GFW's [research](https://globalfishingwatch.org/data-blog/updated-fishing-lists-version-0-2/) indicates that the number of positions a vessel assumes in a given year has implications for their activity. This is because a vessel broadcasts its position via AIS every 2 to 10 seconds when moving, so vessels that are fishing typically have a higher number of positions. The positions feature is an area deserving of greater attention in the analysis.  
 
 I encountered obstacles obtaining additional identity information about vessels during the webscraping phase, which hindered a two-tiered analysis that could have evaluated the behavior of the more "legitimate" registered vessels. Scraping the IMO database or another international fishing registry would add an interesting layer to this investigation.  
 
